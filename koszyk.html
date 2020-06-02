@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Projekt</title>
+        <meta name="author" content="Karina Pieniazkowska">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="icon" href="obrazy/favicon.ico">
+      
+    </head>
+    
+    <body>
+        <header>
+                     
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="glowna.html"><img src="obrazy/szare%20logo.jpg"></a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" 
+                href="glowna.html">Strona główna</a>
+              </li>
+                
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Sklep</a>
+              </li>                            
+              <li class="nav-item">
+                <a class="nav-link" href="kategorie.html">Kategorie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="koszyk.html">Koszyk</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+            
+        </header>
+        
+        <div class="containerkoszyk">
+            <main class="mainkoszyk">
+            <h5>Twój koszyk</h5><br>
+             <table class="tabelakoszyk">
+            
+            <tr class="wierszekoszyk">
+                <th>Numer</th>
+                <th>Nazwa</th>
+                <th>Ilość</th>
+                <th>Cena</th>
+                <th>Producent</th>
+                <th>-</th>
+            </tr>
+            <tr class="wierszekoszyk">
+                <td>1</td>
+                <td>Bateria</td>
+                <td>5</td>
+                <td>250</td>
+                <td>Sonic</td>
+                <td><input type="button" class="przyciski" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr class="wierszekoszyk">
+                <td>2</td>
+                <td>Aparat </td>
+                <td>2</td>
+                <td>1500</td>
+                <td>Nikon</td>
+                <td><input type="button" class="przyciski" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr class="wierszekoszyk">
+                <td>3</td>
+                <td>Statyw</td>
+                <td>85</td>
+                <td>32</td>
+                <td>Sonic</td>
+                <td><input type="button" class="przyciski" value="Delete" onclick="deleteRow(this)"></td>
+                </tr>
+            <tr class="wierszekoszyk">
+                <td>4</td>
+                <td>Karta pamięci</td>
+                <td>120</td>
+                <td>32</td>
+                <td>Toshiba</td>
+                <td><input type="button" class="przyciski" value="Delete" onclick="deleteRow(this)"></td>
+                <br>
+            </tr>
+                
+        </table>
+                
+              <p class="suma">Suma: 3009zł</p>
+            </main>
+        
+                
+                 <aside class="asidekoszyk">
+                 <h5>Dostawa i płatność</h5>
+                     
+                         <table class="dostawa">
+                            <tr class="dostawki">
+                                 <td>Kwota </td> <td>2084zł</td>
+                            </tr>
+                             <tr class="dostawki">
+                                <td> Dostawa</td>
+                                 <td>+25zł</td>
+                             </tr>
+                             <tr class="razem">
+                                <td>Razem</td>
+                                <td>3009zł</td>
+                             </tr>
+                         </table>
+                         <input type="button" class="przyciskdostawy" value="Wybierz formę dostawy i płatność">
+                        <p>Dostawa potrwa od 3 do 5 dni roboczych</p>
+                     
+                </aside>
+           
+        
+            
+           
+               <section class="sectionkoszyk">
+                        <p class="popu">POPULARNE PRODUKTY</p>
+                        <article class="popularne">
+                            <figure><img src="obrazy/mleko.jpg"></figure>
+                            <p class="cena">cena: 2500zł</p>
+                            
+                            <a href="produkt.html" class="zobacz">Zobacz</a>
+                            <a href="koszyk.html" class="zobacz">Dodaj</a>
+                            
+                            
+                        </article>
+                        <article class="popularne">
+                            <figure><img src="obrazy/bateria.jpg"></figure>
+                            <p class="cena">cena: 65zł</p>
+                          
+                            <a href="produkt.html" class="zobacz">Zobacz</a>
+                            <a href="koszyk.html" class="zobacz">Dodaj</a>
+                            
+                        </article>
+                        <article class="popularne">
+                            <figure><img src="obrazy/aparat.jpg"></figure>
+                            <p class="cena">cena: 1000zł</p>
+                           
+                            <a href="produkt.html" class="zobacz">Zobacz</a>
+                            <a href="koszyk.html" class="zobacz">Dodaj</a>
+                            
+                        </article>
+                        <article class="popularne">
+                            <figure><img src="obrazy/etui.jpg"></figure>
+                            <p class="cena">cena: 175zł</p>
+                            <a href="produkt.html" class="zobacz">Zobacz</a>
+                            <a href="koszyk.html" class="zobacz">Dodaj</a>
+                            
+                        </article>
+                    </section>
+            
+            </div>
+        
+        
+
+        
+       <footer>
+      <div class="kolumnastopki">
+          
+        <div class="polastopki1">
+          <p>O NAS<br>
+          Kontakt<br>
+          Współpraca<br>
+          Znajdź nas<br>
+          Regulamin<br>
+          Polityka prywatności</p>
+        </div>
+       
+        <div class="polastopki1">
+          <p>TWOJE KONTO<br>
+          Zaloguj się<br>
+          Zarejestruj się</p>
+        </div>
+          
+     </div>
+        
+    <div class="kolumnastopki">  
+        <div class="polastopki1">
+          <p>WYGODNE ZAKUPY ONLINE<br>
+          Szybka dostawa do 3 dni roboczych<br>
+          Miesiąc na zwrot<br>
+          Promocje dla stałych klientów</p>
+        </div>
+        
+         <div class="polastopki1">
+          <p>OBSŁUGA SKLEPU ONLINE<br>
+          (pon-sob; 9-20)<br>    
+          &copy; Karina Pieniazkowska 2020<br>
+          +32 345 937 285<br>
+          sklep@poczta.pl<br>
+          ul.Koszalińska 12, Bartoszowo</p>
+        </div>
+        
+      </div>
+        
+      <div class="kolumnastopki">  
+        <div class="polastopki1">
+          <p>NASZE SOCIAL MEDIA<br>
+          <img src="obrazy/fb.png" class="ikonystopka">
+          <img src="obrazy/ig.png" class="ikonystopka">
+          <img src="obrazy/yt.png" class="ikonystopka"><br></p><br>
+        </div>
+        
+        <div class="polastopki1">
+          <p>NEWSLETTER<br>
+              zapisując się akceptujesz Regulamin</p>   
+          <input type="text" placeholder="email"/><button class="przyciski">Zapisz</button><br>
+        </div>
+        
+      </div>
+        
+    </footer>
+       
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        
+    </body>
+</html>
